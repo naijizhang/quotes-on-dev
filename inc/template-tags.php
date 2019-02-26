@@ -35,16 +35,14 @@ function qod_numbered_pagination( $query_type = '' ) {
 	endif;
 }
 
+//show only one post on home page
 function quote_home_posts( $query ) {
 	if ( is_admin() || ! $query->is_main_query() ){
 		return;
 	}
 
-	//list order for taxonomy page
-	if(is_tax()){
-		$query->set('orderby','title');
-		$query->set( 'posts_per_page', 16 );
-		$query->set( 'order','DESC');
+	if(is_home()){
+		$query->set( 'posts_per_page', 1 );
         return;
 	}
 }

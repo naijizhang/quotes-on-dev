@@ -7,16 +7,17 @@
 
 ?>
 
-			</div><!-- #content -->
+</div><!-- #content -->
 
-			<footer id="colophon" class="site-footer" role="contentinfo">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu(); ?>
-				</nav><!-- #site-navigation -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+        <?php wp_nav_menu(); ?>
+    </nav><!-- #site-navigation -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
 
-		<?php wp_footer(); ?>
+<?php wp_footer(); ?>
 
-	</body>
-</html>
+</body>
+
+</html> 
