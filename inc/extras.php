@@ -41,7 +41,7 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
 
-add_action( 'wp_ajax_red_comment_ajax', 'red_comment_ajax' );
+
 function quotes_scripts() {
     $script_url = get_template_directory_uri() . '/js/scripts.js';
 	wp_enqueue_script( 'jquery' );
