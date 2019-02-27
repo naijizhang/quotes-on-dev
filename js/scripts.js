@@ -22,4 +22,10 @@
       //window.location = response[0].link;
     });
   });
+
+
+  $( ".menu-item-222 a" ).after( "<span>|</span>" );
+  $( ".menu-item-221 a" ).after( "<span>|</span>" );
+  $( ".menu-item-219 a" ).before( "<span>Brought to you by</span>" );
+  
 })(jQuery);

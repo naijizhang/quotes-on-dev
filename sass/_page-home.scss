@@ -1,0 +1,62 @@
+body{
+    padding:2.5%;
+}
+.site-header {
+  .site-branding {
+      margin: 50px auto;
+    img {
+        display: block;
+        width: 80%;
+    }
+  }
+}
+.site-content {
+  .entry-content {
+    p {
+    }
+  }
+  .entry-author {
+    p {
+        margin: 0px;
+    }
+  }
+  button {
+      box-shadow: none;
+      background: transparent;
+      text-shadow: none;
+      color: $color__link;
+      border: 1px solid $color__link;
+      &:hover{
+        color: $color__link-hover;
+        border: 1px solid $color__link-hover;
+      }
+  }
+}
+
+.site-footer {
+  ul {
+    //all menu item
+    .menu-item {
+      display: flex;
+      flex-direction: row nowrap;
+      span {
+        margin: auto 1rem;
+      }
+    }
+    //about
+    .menu-item-222 {
+    }
+    //archives
+    .menu-item-221 {
+    }
+    //submit a quote
+    .menu-item-220 {
+    }
+    //red academy
+    .menu-item-219 {
+      span {
+        margin-left: 0px;
+      }
+    }
+  }
+}

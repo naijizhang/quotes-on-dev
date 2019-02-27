@@ -514,6 +514,9 @@ a {
   text-align: right;
   width: 50%; }
 
+.main-navigation ul {
+  display: block; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -617,8 +620,41 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.main-navigation ul {
-  display: block; }
-
 /* All Archives Page */
 /* Submit a Quote Page */
+body {
+  padding: 2.5%; }
+
+.site-header .site-branding {
+  margin: 50px auto; }
+  .site-header .site-branding img {
+    display: block;
+    width: 80%; }
+
+.site-content .entry-author p {
+  margin: 0px; }
+
+.site-content button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  text-shadow: none;
+  color: #00cc00;
+  border: 1px solid #00cc00; }
+  .site-content button:hover {
+    color: #009100;
+    border: 1px solid #009100; }
+
+.site-footer ul .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap; }
+  .site-footer ul .menu-item span {
+    margin: auto 1rem; }
+
+.site-footer ul .menu-item-219 span {
+  margin-left: 0px; }

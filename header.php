@@ -27,6 +27,9 @@
             <div class="site-branding">
 
                 <!-- the site logo -->
+                <?php $logo_url = get_template_directory_uri() . '/assets/qod-logo.svg'; ?>
+
+                <img class="frontsite-header-logo" src='<?php echo $logo_url ?>'>
 
             </div><!-- .site-branding -->
         </header><!-- #masthead -->
