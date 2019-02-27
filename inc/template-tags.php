@@ -37,6 +37,9 @@ function qod_numbered_pagination( $query_type = '' ) {
 
 //show only one post on home page
 function quote_home_posts( $query ) {
+	if ( is_admin() || ! $query->is_main_query() )
+		return;
+		
 	if(is_home()){
 		$query->set( 'posts_per_page', 1 );
         return;

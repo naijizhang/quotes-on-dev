@@ -40,3 +40,15 @@ add_action( 'wp_before_admin_bar_render', 'qod_admin_bar_render' );
 	remove_meta_box( 'trackbacksdiv', 'post', 'normal' );
 }
 add_action( 'admin_init', 'qod_remove_comments_meta_boxes' );
+
+add_action( 'wp_ajax_red_comment_ajax', 'red_comment_ajax' );
+function quotes_scripts() {
+    $script_url = get_template_directory_uri() . '/js/scripts.js';
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'home-quotes', $script_url, array( 'jquery' ), false, true );
+   wp_localize_script( 'home-quotes', 'quotes_vars', array(
+	   'rest_url' => esc_url_raw( rest_url() ),
+	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+   ) );
+ }
+ add_action( 'wp_enqueue_scripts', 'quotes_scripts' );

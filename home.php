@@ -20,18 +20,28 @@ get_header(); ?>
         </header>
         <?php endif; ?>
 
+        <?php
+        //reference  https://www.wpexplorer.com/random-posts-wordpress/
+        // Query random posts
+        $the_query = new WP_Query(array(
+            'post_type'      => 'post',
+            'orderby'        => 'rand',
+            'posts_per_page' => 1,
+        )); ?>
+
         <?php  /* Start the Loop */ ?>
-        <?php while (have_posts()): the_post(); ?>
-
+        <?php while ($the_query->have_posts()):$the_query->the_post();  ?>
         <?php get_template_part('template-parts/content'); ?>
-
-        <?php endwhile; ?>
+        <?php endwhile;
+  		wp_reset_postdata(); ?>
 
         <?php else: ?>
 
         <?php get_template_part('template-parts/content', 'none'); ?>
 
         <?php endif; ?>
+
+        <button type="button" id="get-new-post">Get More</button>
 
 
     </main><!-- #main -->
