@@ -13,6 +13,9 @@
         <?php the_content(); ?>
     </div><!-- .entry-content -->
     <div class="entry-author">
-        <?php the_title('<p class="entry-title">—', '</p>'); ?>
+		<?php the_title('<p class="entry-title">—', '</p>'); ?>
+
+		<!-- //GET THE QUOTE META -->
+		
     </div><!-- .entry-header -->
 </article><!-- #post-## --> 
