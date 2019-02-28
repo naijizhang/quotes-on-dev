@@ -631,8 +631,17 @@ body {
     display: block;
     width: 80%; }
 
-.site-content .entry-author h2 {
-  margin: 0px; }
+.site-content .entry-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
+  .site-content .entry-author h2 {
+    display: inline;
+    margin: 0px; }
 
 .site-content button {
   -webkit-box-shadow: none;

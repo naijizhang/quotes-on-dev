@@ -16,7 +16,10 @@ body{
     }
   }
   .entry-author {
+    display: flex;
+    flex-flow: row nowrap;
     h2 {
+      display: inline;
         margin: 0px;
     }
   }
