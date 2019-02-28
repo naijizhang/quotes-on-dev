@@ -16,6 +16,6 @@
 		<?php the_title('<p id="entry-title" class="entry-title">—', '</p>'); ?>
 
 		<!-- //GET THE QUOTE META -->
-		
+	
     </div><!-- .entry-header -->
 </article><!-- #post-## --> 

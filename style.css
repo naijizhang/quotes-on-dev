@@ -631,7 +631,7 @@ body {
     display: block;
     width: 80%; }
 
-.site-content .entry-author p {
+.site-content .entry-author h2 {
   margin: 0px; }
 
 .site-content button {
