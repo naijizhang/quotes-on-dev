@@ -32,8 +32,22 @@ get_header(); ?>
         <!-- //Categories -->
         <div class="all-categories">
 
-				<?php wp_list_categories(array());?>
-	
+            <?php wp_list_categories(array()); ?>
+
+        </div>
+
+        <!-- //Tags -->
+        <!-- reference: https://stackoverflow.com/questions/39685167/list-all-the-tags-in-a-wordpress-blog-->
+        <div class="all-tags"> 
+        <h2>Tags</h2>
+            <ul>
+                <?php $tags = get_tags('post_tag'); //taxonomy=post_tag
+                if ($tags): foreach ($tags as $tag): ?>
+                <li><a class="tag" href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" title="<?php echo esc_attr($tag->name); ?>">
+                        <?php echo esc_html($tag->name); ?></a></li>
+                <?php endforeach; ?>
+                <?php endif; ?>
+            </ul>
         </div>
 
 
