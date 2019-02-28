@@ -14,10 +14,5 @@
     </div><!-- .entry-content -->
     <div class="entry-author">
         <h2 id="entry-title" class="entry-title"></h2>
-        <!-- //GET THE QUOTE META -->
-        <div class="quote-meta-onlyText" id="quote-meta-onlyText">
-        </div>
-        <div class="quote-meta-hasLink" id="quote-meta-hasLink">
-        </div>
     </div><!-- .entry-header -->
 </article><!-- #post-## --> 

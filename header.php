@@ -28,8 +28,10 @@
 
                 <!-- the site logo -->
                 <?php $logo_url = get_template_directory_uri() . '/assets/qod-logo.svg'; ?>
-
-                <img class="frontsite-header-logo" src='<?php echo $logo_url ?>'>
+                <a class="logo-link" href="<?php echo get_home_url(); ?>">
+                    <img class="frontsite-header-logo" src='<?php echo $logo_url ?>'>
+                </a>
+                
 
             </div><!-- .site-branding -->
         </header><!-- #masthead -->

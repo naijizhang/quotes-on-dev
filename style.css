@@ -641,7 +641,8 @@ body {
           flex-flow: row nowrap; }
   .site-content .entry-author h2 {
     display: inline;
-    margin: 0px; }
+    margin: 0px;
+    font-size: 1.25rem; }
 
 .site-content button {
   -webkit-box-shadow: none;
