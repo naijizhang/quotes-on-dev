@@ -1,7 +1,12 @@
 (function($) {
   //testing
   //console.log(quotes_vars);
-  getPost(); //initalization
+
+  //if on home page
+  if( $('body.home').length ){
+    getPost(); //initalization
+  }
+  
   //get a random new post
   function getPost() {
     $.ajax({
