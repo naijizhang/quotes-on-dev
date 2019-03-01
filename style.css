@@ -788,3 +788,60 @@ body {
     .content-area-archive .all-tags ul li {
       font-size: 1rem;
       display: inline; }
+
+.content-area-submit p {
+  font-weight: 300; }
+
+.content-area-submit a {
+  text-decoration: none;
+  font-weight: 300; }
+
+.content-area-submit .eachform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+
+.content-area-submit form .each-field {
+  background: transparent;
+  border: 2px solid #00cc00;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .content-area-submit form .each-field:focus {
+    border: 2px solid white;
+    outline: none; }
+
+.content-area-submit form .author-of-quote input {
+  width: 60%; }
+
+.content-area-submit form .quote-content input {
+  width: 100%;
+  height: 100px; }
+
+.content-area-submit form .quote-source input {
+  width: 60%; }
+
+.content-area-submit form .quote-source-url input {
+  width: 60%; }
+
+.content-area-submit form #submit-new {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+  text-shadow: none;
+  color: #00cc00;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 50px auto;
+  padding: 0.75rem 2.25rem;
+  border: 2px solid #00cc00; }
+  .content-area-submit form #submit-new:hover {
+    color: #009100;
+    border: 2px solid #009100; }
+  .content-area-submit form #submit-new:focus {
+    outline: none; }
