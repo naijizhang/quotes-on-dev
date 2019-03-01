@@ -35,7 +35,7 @@ get_header(); ?>
             <?php wp_list_categories(array()); ?>
 
         </div>
-
+        <!-- wp_tag_cloud( $args ); -->
         <!-- //Tags -->
         <!-- reference: https://stackoverflow.com/questions/39685167/list-all-the-tags-in-a-wordpress-blog-->
         <div class="all-tags"> 
