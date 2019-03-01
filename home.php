@@ -31,7 +31,7 @@ get_header(); ?>
 
         <?php endif; ?>
 
-        <button type="button" id="get-new-post">Get More</button>
+        <button type="button" id="get-new-post">Show Me Another!</button>
 
 
     </main><!-- #main -->

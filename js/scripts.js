@@ -68,7 +68,7 @@ $(window).on('popstate',function(){
 
   $('.menu-item-222 a').after('<span>|</span>');
   $('.menu-item-221 a').after('<span>|</span>');
-  $('.menu-item-219 a').before('<span>Brought to you by</span>');
+  $('.menu-item-219 a').before('<span class="more-divide-mark">|</span><span>Brought to you by</span>');
 
   // function uploadPost() {
   //   $.ajax({

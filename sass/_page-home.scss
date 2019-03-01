@@ -20,13 +20,16 @@ body {
     margin: 50px auto;
     img {
       display: block;
-      width: 80%;
+      width: 300px;
     }
   }
 }
 .site-content {
   .entry-content {
     p {
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: normal;
     }
   }
   .entry-author {
@@ -36,6 +39,12 @@ body {
       display: inline;
       margin: 0px;
       font-size: 1.25rem;
+      font-weight: 300;
+      font-style: normal;
+      a{
+        text-decoration: none;
+        font-style: italic;
+      }
     }
   }
   button {
@@ -43,15 +52,24 @@ body {
     background: transparent;
     text-shadow: none;
     color: $color__link;
-    border: 1px solid $color__link;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 50px auto;
+    padding: 0.75rem 2.25rem;
+    border: 2px solid $color__link;
     &:hover {
       color: $color__link-hover;
-      border: 1px solid $color__link-hover;
+      border: 2px solid $color__link-hover;
+    }
+    &:focus{
+      outline: none;
     }
   }
 }
 
 .site-footer {
+  font-weight: 300;
+  margin-top: 40px;
   ul {
     //all menu item
     .menu-item {
@@ -69,9 +87,14 @@ body {
     }
     //submit a quote
     .menu-item-220 {
+      margin-right: 1rem;
     }
     //red academy
     .menu-item-219 {
+      width: 100%;
+      .more-divide-mark{
+        display: none;
+      }
       span {
         margin-left: 0px;
       }
@@ -80,6 +103,22 @@ body {
 }
 
 @include tablet {
+  .site-footer ul .menu-item-219 .more-divide-mark{
+    display: block;
+  }
+  .site-footer ul {
+    flex-wrap: nowrap;
+    .menu-item-219 {
+      width: 270px;
+      margin: 0px;
+    }
+
+  }
+  .menu-item-219 {
+    span {
+      margin-left: 0px;
+    }
+  }
   
 }
 @include desktop {
