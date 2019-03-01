@@ -2,11 +2,11 @@
   //testing
   console.log(quotes_vars);
 
-let lastPage='';
-//make back/forward nav work with history api
-$(window).on('popstate',function(){
-  window.location.replace(lastPage);
-})
+  let lastPage = '';
+  //make back/forward nav work with history api
+  $(window).on('popstate', function() {
+    window.location.replace(lastPage);
+  });
 
   //if on home page
   if ($('body.home').length) {
@@ -16,7 +16,7 @@ $(window).on('popstate',function(){
   //get a random new post
   function getPost() {
     $.ajax({
-      method: 'GET', 
+      method: 'GET',
       url:
         quotes_vars.rest_url +
         'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
@@ -52,45 +52,60 @@ $(window).on('popstate',function(){
       author.innerHTML = '—' + response[0].title.rendered + source;
 
       //change url
-      const url = quotes_vars.home_url+'/'+response[0].slug;
+      const url = quotes_vars.home_url + '/' + response[0].slug;
       console.log(url);
-      history.pushState(null,null,url);
+      history.pushState(null, null, url);
     });
   }
 
   //when click button , get a random new post
   $('#get-new-post').on('click', function(event) {
     event.preventDefault();
-    lastPage=document.URL;
+    lastPage = document.URL;
 
     getPost();
   });
 
   $('.menu-item-222 a').after('<span>|</span>');
   $('.menu-item-221 a').after('<span>|</span>');
-  $('.menu-item-219 a').before('<span class="more-divide-mark">|</span><span>Brought to you by</span>');
+  $('.menu-item-219 a').before(
+    '<span class="more-divide-mark">|</span><span>Brought to you by</span>'
+  );
 
-  // function uploadPost() {
-  //   $.ajax({
-  //     method: 'post',
-  //     data:{
-  //       title:{rendered:"123"},
-  //       content:{rendered:"123"},
-  //       _qod_quote_source:"123",
-  //       _qod_quote_source_url:"123"
-
-  //     },
-  //     url:
-  //       quotes_vars.rest_url +'wp/v2/posts',
-  //     beforeSend: function(xhr) {
-  //       xhr.setRequestHeader('X-WP-Nonce', quotes_vars.wpapi_nonce);
-  //     },
-  //     dataType: 'json'
-  //   }).done(function(response) {
-  //     console.log(response);
-  //   });
-  // }
-  // $('#submit-new').on('click',()=>{
-  //   uploadPost();
-  // })
+  function uploadPost() {
+    
+    let newPost={
+      title:  $('#new-author').val(),
+      content:   $('#new-content').val(),
+      _qod_quote_source:  $('#new-quote-source').val(),
+      _qod_quote_source_url:  $('#new-quote-source-url').val(),
+      excerpt:{
+        protected: false,
+        rendered: "<p>"+$('#new-content').val()+"</p>"
+      },
+      post_status: "publish"
+    }
+    $.ajax({
+      method: 'post',
+      data: newPost,
+      url: quotes_vars.rest_url + 'wp/v2/posts',
+      beforeSend: function(xhr) {
+        xhr.setRequestHeader('X-WP-Nonce', quotes_vars.wpapi_nonce);
+      }
+    }).done(function() {
+      $('#new-author').val('');
+      $('#new-content').val('');
+      $('#new-quote-source').val('');
+      $('#new-quote-source-url').val('')
+      alert('Success! Got the new quote.');
+    });
+  }
+  $('#submit-new').on('click', () => {
+    if($('#new-author').val()!== ''&&$('#new-content').val() !==''){
+      uploadPost();
+    } else{
+      alert('The "Author of quote" and "Quote" are required.');
+    }
+    
+  });
 })(jQuery);
