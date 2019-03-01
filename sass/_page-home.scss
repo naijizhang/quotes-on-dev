@@ -6,13 +6,13 @@ body {
   width: 100%;
   display: block;
   .side-logo-left {
-   display: none;
+    display: none;
   }
   .content-area {
     width: 100%;
   }
   .side-logo-right {
-   display: none;
+    display: none;
   }
 }
 .site-header {
@@ -41,7 +41,7 @@ body {
       font-size: 1.25rem;
       font-weight: 300;
       font-style: normal;
-      a{
+      a {
         text-decoration: none;
         font-style: italic;
       }
@@ -61,7 +61,7 @@ body {
       color: $color__link-hover;
       border: 2px solid $color__link-hover;
     }
-    &:focus{
+    &:focus {
       outline: none;
     }
   }
@@ -70,6 +70,8 @@ body {
 .site-footer {
   font-weight: 300;
   margin-top: 40px;
+  padding-bottom: 60px;
+  height: 70px;
   ul {
     //all menu item
     .menu-item {
@@ -92,7 +94,7 @@ body {
     //red academy
     .menu-item-219 {
       width: 100%;
-      .more-divide-mark{
+      .more-divide-mark {
         display: none;
       }
       span {
@@ -103,7 +105,7 @@ body {
 }
 
 @include tablet {
-  .site-footer ul .menu-item-219 .more-divide-mark{
+  .site-footer ul .menu-item-219 .more-divide-mark {
     display: block;
   }
   .site-footer ul {
@@ -112,14 +114,12 @@ body {
       width: 270px;
       margin: 0px;
     }
-
   }
   .menu-item-219 {
     span {
       margin-left: 0px;
     }
   }
-  
 }
 @include desktop {
   //show the left-logo and right-logo

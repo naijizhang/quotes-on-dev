@@ -683,7 +683,9 @@ body {
 
 .site-footer {
   font-weight: 300;
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 60px;
+  height: 70px; }
   .site-footer ul .menu-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -747,3 +749,42 @@ body {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+.content-area-archive h1, .content-area-archive h2 {
+  font-weight: 500; }
+
+.content-area-archive h2 {
+  margin-top: 50px; }
+
+.content-area-archive a {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 2rem;
+  margin-right: 1.125rem;
+  font-weight: 300; }
+
+.content-area-archive .all-categories {
+  list-style: none; }
+  .content-area-archive .all-categories li {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 50px; }
+    .content-area-archive .all-categories li ul {
+      margin-top: 20px;
+      margin-left: 0px;
+      padding-left: 0px; }
+      .content-area-archive .all-categories li ul li {
+        font-size: 1rem;
+        display: inline; }
+
+.content-area-archive .all-tags {
+  list-style: none; }
+  .content-area-archive .all-tags ul {
+    margin-left: 0px;
+    padding-left: 0px; }
+    .content-area-archive .all-tags ul li {
+      font-size: 1rem;
+      display: inline; }
