@@ -6,6 +6,10 @@
  */
 
 ?>
+<!-- right quotation mark -->
+<div class="side-logo-right">
+    <i class="fas fa-quote-right quotemark-right"></i>
+</div>
 
 </div><!-- #content -->
 

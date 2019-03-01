@@ -625,6 +625,16 @@ object {
 body {
   padding: 2.5%; }
 
+.site-content {
+  width: 100%;
+  display: block; }
+  .site-content .side-logo-left {
+    display: none; }
+  .site-content .content-area {
+    width: 100%; }
+  .site-content .side-logo-right {
+    display: none; }
+
 .site-header .site-branding {
   margin: 50px auto; }
   .site-header .site-branding img {
@@ -668,3 +678,36 @@ body {
 
 .site-footer ul .menu-item-219 span {
   margin-left: 0px; }
+
+@media (min-width: 1000px) {
+  .site-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap; }
+    .site-content .side-logo-left {
+      width: 20%;
+      color: #00cc00;
+      font-size: 125px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .site-content .content-area {
+      width: 60%; }
+    .site-content .side-logo-right {
+      width: 20%;
+      color: #00cc00;
+      font-size: 125px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }

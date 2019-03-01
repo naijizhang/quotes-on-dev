@@ -16,7 +16,7 @@ $(window).on('popstate',function(){
   //get a random new post
   function getPost() {
     $.ajax({
-      method: 'GET',
+      method: 'GET', 
       url:
         quotes_vars.rest_url +
         'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',

@@ -1,12 +1,26 @@
-body{
-    padding:2.5%;
+body {
+  padding: 2.5%;
+}
+
+.site-content {
+  width: 100%;
+  display: block;
+  .side-logo-left {
+   display: none;
+  }
+  .content-area {
+    width: 100%;
+  }
+  .side-logo-right {
+   display: none;
+  }
 }
 .site-header {
   .site-branding {
-      margin: 50px auto;
+    margin: 50px auto;
     img {
-        display: block;
-        width: 80%;
+      display: block;
+      width: 80%;
     }
   }
 }
@@ -20,20 +34,20 @@ body{
     flex-flow: row nowrap;
     h2 {
       display: inline;
-        margin: 0px;
-        font-size: 1.25rem;
+      margin: 0px;
+      font-size: 1.25rem;
     }
   }
   button {
-      box-shadow: none;
-      background: transparent;
-      text-shadow: none;
-      color: $color__link;
-      border: 1px solid $color__link;
-      &:hover{
-        color: $color__link-hover;
-        border: 1px solid $color__link-hover;
-      }
+    box-shadow: none;
+    background: transparent;
+    text-shadow: none;
+    color: $color__link;
+    border: 1px solid $color__link;
+    &:hover {
+      color: $color__link-hover;
+      border: 1px solid $color__link-hover;
+    }
   }
 }
 
@@ -61,6 +75,35 @@ body{
       span {
         margin-left: 0px;
       }
+    }
+  }
+}
+
+@include tablet {
+  
+}
+@include desktop {
+  //show the left-logo and right-logo
+  .site-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    .side-logo-left {
+      width: 20%;
+      color: $color__link;
+      font-size: 125px;
+      display: flex;
+      justify-content: center;
+    }
+    .content-area {
+      width: 60%;
+    }
+    .side-logo-right {
+      width: 20%;
+      color: $color__link;
+      font-size: 125px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
