@@ -93,6 +93,7 @@
         xhr.setRequestHeader('X-WP-Nonce', quotes_vars.wpapi_nonce);
       }
     }).done(function() {
+      //empty the input area
       $('#new-author').val('');
       $('#new-content').val('');
       $('#new-quote-source').val('');
@@ -106,6 +107,6 @@
     } else{
       alert('The "Author of quote" and "Quote" are required.');
     }
-    
+
   });
 })(jQuery);

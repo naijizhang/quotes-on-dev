@@ -19,7 +19,7 @@ get_header(); ?>
 
             <div class="eachform quote-content">
                 <label for="new-content">Quote</label>
-                <input class="each-field" type="text" name="new-content" id="new-content">
+                <textarea class="each-field" id="new-content" name="new-content" cols="40" rows="5"></textarea>
             </div>
             <div class="eachform quote-source">
                 <label for="new-quote-source">Where did you find this quote? (e.g. book name)</label>
