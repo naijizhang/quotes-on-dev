@@ -750,6 +750,13 @@ body {
           -ms-flex-pack: center;
               justify-content: center; } }
 
+.page-id-213 h1 {
+  font-weight: 400; }
+
+.page-id-213 .site-content .entry-content p {
+  font-size: 1rem;
+  line-height: 1.5; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -845,3 +852,10 @@ body {
     border: 2px solid #009100; }
   .content-area-submit form #submit-new:focus {
     outline: none; }
+
+.content-area-single p {
+  font-size: 1.25rem;
+  font-weight: 300; }
+  .content-area-single p a {
+    text-decoration: none;
+    font-style: italic; }
