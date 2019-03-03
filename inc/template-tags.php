@@ -46,3 +46,12 @@ function quote_home_posts( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'quote_home_posts', 1 );
+
+//show five posts on archive page
+function quote_archive_posts( $query ) {
+	if(is_archive()){
+		$query->set( 'posts_per_page', 5 );
+        return;
+	}
+}
+add_action( 'pre_get_posts', 'quote_archive_posts', 1 );
