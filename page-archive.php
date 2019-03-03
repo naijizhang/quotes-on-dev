@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area content-area-archive">
+<div id="primary" class="content-area content-area-archive-page">
     <main id="main" class="site-main" role="main">
 
         <h1>Archives</h1>

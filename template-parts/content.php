@@ -13,9 +13,15 @@
         <?php the_content(); ?>
     </div><!-- .entry-content -->
     <div class="entry-author">
-		<?php the_title('<p id="entry-title" class="entry-title">—', '</p>'); ?>
-
-		<!-- //GET THE QUOTE META -->
+    <p id="entry-title" class="entry-title">—
+      <?php the_title(); ?>
+      <?php if(get_post_meta($post->ID, '_qod_quote_source_url', true)!==''):?>
+      <span class="quote-meta">, <a href="<?php echo get_post_meta($post->ID, '_qod_quote_source_url', true); ?>"><?php echo get_post_meta($post->ID, '_qod_quote_source', true); ?></a></span>
+      <?php elseif(get_post_meta($post->ID, '_qod_quote_source', true)!==''):?>
+      <span class="quote-meta">, <?php echo get_post_meta($post->ID, '_qod_quote_source', true); ?></span>
+      <?php endif?>
+    </p>
+    <!-- //GET THE QUOTE META -->
 	
     </div><!-- .entry-header -->
 </article><!-- #post-## --> 

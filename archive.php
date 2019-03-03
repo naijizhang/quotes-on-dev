@@ -6,7 +6,7 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area content-area-archive">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -25,9 +25,16 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
+			<nav>
+			<?php //the_posts_navigation(); 
+			$args = array(
+				'prev_text'          => __('&larr; Previous'),
+				'next_text'          => __('Next &rarr;'),
+				'after_page_number'  => '&nbsp;',
+				'before_page_number' => '&nbsp;',
+			);			
+			 echo paginate_links( $args ); ?>
+			</nav>
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>

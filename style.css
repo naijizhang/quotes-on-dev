@@ -760,39 +760,39 @@ body {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.content-area-archive h1, .content-area-archive h2 {
+.content-area-archive-page h1, .content-area-archive-page h2 {
   font-weight: 500; }
 
-.content-area-archive h2 {
+.content-area-archive-page h2 {
   margin-top: 50px; }
 
-.content-area-archive a {
+.content-area-archive-page a {
   display: inline-block;
   text-decoration: none;
   line-height: 2rem;
   margin-right: 1.125rem;
   font-weight: 300; }
 
-.content-area-archive .all-categories {
+.content-area-archive-page .all-categories {
   list-style: none; }
-  .content-area-archive .all-categories li {
+  .content-area-archive-page .all-categories li {
     font-size: 1.5rem;
     list-style: none;
     margin-top: 50px; }
-    .content-area-archive .all-categories li ul {
+    .content-area-archive-page .all-categories li ul {
       margin-top: 20px;
       margin-left: 0px;
       padding-left: 0px; }
-      .content-area-archive .all-categories li ul li {
+      .content-area-archive-page .all-categories li ul li {
         font-size: 1rem;
         display: inline; }
 
-.content-area-archive .all-tags {
+.content-area-archive-page .all-tags {
   list-style: none; }
-  .content-area-archive .all-tags ul {
+  .content-area-archive-page .all-tags ul {
     margin-left: 0px;
     padding-left: 0px; }
-    .content-area-archive .all-tags ul li {
+    .content-area-archive-page .all-tags ul li {
       font-size: 1rem;
       display: inline; }
 
@@ -859,3 +859,27 @@ body {
   .content-area-single p a {
     text-decoration: none;
     font-style: italic; }
+
+.content-area-archive h1 {
+  margin-bottom: 30px; }
+
+.content-area-archive article {
+  margin: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px dotted; }
+  .content-area-archive article:last-of-type {
+    border-bottom: 1px dotted;
+    margin-bottom: 70px; }
+  .content-area-archive article p {
+    font-weight: 300;
+    font-size: 1.25rem; }
+
+.quote-meta {
+  font-style: italic; }
+  .quote-meta a {
+    text-decoration: none; }
+
+nav a {
+  text-decoration: none;
+  font-weight: 300; }

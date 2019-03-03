@@ -1,0 +1,32 @@
+.content-area-archive{
+    h1{
+        margin-bottom: 30px;
+    }
+    article{
+        margin: 0px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-top: 1px dotted;
+        &:last-of-type{
+            border-bottom: 1px dotted;
+            margin-bottom: 70px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 1.25rem;
+        }
+    }
+}
+.quote-meta{
+    font-style: italic;
+    a{
+      text-decoration: none;
+    }
+  }
+  //navigation link
+  nav{
+      a{
+        text-decoration: none;
+        font-weight: 300;
+      }
+  }
