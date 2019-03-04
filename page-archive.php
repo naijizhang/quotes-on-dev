@@ -17,8 +17,6 @@ get_header(); ?>
         // Query random posts
         $the_query = new WP_Query(array(
             'post_type'      => 'post',
-            'orderby'        => 'title',
-            'order'          => 'ASC',
             'posts_per_page' => -1,
         )); ?>
         <div class="all-authors">

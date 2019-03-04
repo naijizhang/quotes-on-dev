@@ -41,13 +41,13 @@ body {
       font-size: 1.25rem;
       font-weight: 300;
       font-style: normal;
-     
+
       a {
         text-decoration: none;
         font-style: italic;
       }
     }
-    .source-part{
+    .source-part {
       font-style: italic;
     }
   }
@@ -76,7 +76,7 @@ body {
   margin-top: 40px;
   padding-bottom: 60px;
   height: 70px;
-  
+
   ul {
     //all menu item
     .menu-item {
@@ -111,6 +111,34 @@ body {
 }
 
 @include tablet {
+  .site-header {
+    .site-branding {
+      img {
+        width: 500px;
+      }
+    }
+  }
+  .site-content {
+    .entry-content {
+      p {
+        font-size: 1.75rem;
+      }
+    }
+    .entry-author {
+      font-size: 1.25rem;
+      h2 {
+        display: inline;
+        margin: 0px;
+        font-size: 1.25rem;
+        font-weight: 300;
+        font-style: normal;
+      }
+    }
+    button {
+      font-size: 1.25rem;
+    }
+  }
+
   .site-footer ul .menu-item-219 .more-divide-mark {
     display: block;
   }
@@ -149,6 +177,34 @@ body {
       font-size: 125px;
       display: flex;
       justify-content: center;
+    }
+  }
+  .site-header {
+    .site-branding {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 700px;
+      }
+    }
+  }
+  .site-content {
+    .entry-content {
+      p {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .button-new-post {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .site-footer {
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
     }
   }
 }

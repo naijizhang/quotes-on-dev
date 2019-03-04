@@ -47,3 +47,14 @@
         }
     }
 }
+@include tablet {
+    .content-area-archive-page{
+    a{
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+    }
+    }
+}
+@include desktop {
+
+}

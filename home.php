@@ -21,7 +21,7 @@ get_header(); ?>
         <?php endif; ?>
 
         <?php  /* Start the Loop */ ?>
-        <?php while (have_posts()):the_post();  ?>
+        <?php while (have_posts()): the_post();  ?>
         <?php get_template_part('template-parts/content-structure'); ?>
         <?php endwhile; ?>
 
@@ -30,9 +30,9 @@ get_header(); ?>
         <?php get_template_part('template-parts/content-structure', 'none'); ?>
 
         <?php endif; ?>
-
-        <button type="button" id="get-new-post">Show Me Another!</button>
-
+        <div class="button-new-post">
+            <button type="button" id="get-new-post">Show Me Another!</button>
+        </div>
 
     </main><!-- #main -->
 </div><!-- #primary -->

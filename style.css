@@ -717,6 +717,20 @@ body {
       margin-left: 0px; }
 
 @media (min-width: 620px) {
+  .site-header .site-branding img {
+    width: 500px; }
+  .site-content .entry-content p {
+    font-size: 1.75rem; }
+  .site-content .entry-author {
+    font-size: 1.25rem; }
+    .site-content .entry-author h2 {
+      display: inline;
+      margin: 0px;
+      font-size: 1.25rem;
+      font-weight: 300;
+      font-style: normal; }
+  .site-content button {
+    font-size: 1.25rem; }
   .site-footer ul .menu-item-219 .more-divide-mark {
     display: block; }
   .site-footer ul {
@@ -759,7 +773,34 @@ body {
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
-              justify-content: center; } }
+              justify-content: center; }
+  .site-header .site-branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .site-header .site-branding img {
+      width: 700px; }
+  .site-content .entry-content p {
+    font-size: 2.5rem; }
+  .button-new-post {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%; }
+  .site-footer nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 50px; } }
 
 .page-id-213 h1 {
   font-weight: 400; }
@@ -806,6 +847,11 @@ body {
     .content-area-archive-page .all-tags ul li {
       font-size: 1rem;
       display: inline; }
+
+@media (min-width: 620px) {
+  .content-area-archive-page a {
+    font-size: 1.25rem;
+    line-height: 2.5rem; } }
 
 .content-area-submit p {
   font-weight: 300; }
