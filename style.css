@@ -671,6 +671,8 @@ body {
     .site-content .entry-author h2 a {
       text-decoration: none;
       font-style: italic; }
+  .site-content .entry-author .source-part {
+    font-style: italic; }
 
 .site-content button {
   -webkit-box-shadow: none;
@@ -726,7 +728,7 @@ body {
   .menu-item-219 span {
     margin-left: 0px; } }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .site-content {
     width: 100%;
     display: -webkit-box;

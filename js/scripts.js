@@ -41,7 +41,7 @@
       } else if (response[0]._qod_quote_source.length !== 0) {
         //has source
 
-        source = `,${response[0]._qod_quote_source}`;
+        source = `,&nbsp;${response[0]._qod_quote_source}`;
       } else {
         //no source
         //keep empty
@@ -49,7 +49,7 @@
       }
       //fill new content
       content.innerHTML = response[0].content.rendered;
-      author.innerHTML = '—' + response[0].title.rendered + source;
+      author.innerHTML = '—' + response[0].title.rendered + '<span class="source-part">' +source+'</span>';
 
       //change url
       const url = quotes_vars.home_url + '/' + response[0].slug;
