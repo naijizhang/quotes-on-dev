@@ -312,6 +312,10 @@ mark, ins {
 big {
   font-size: 125%; }
 
+ul {
+  padding-left: 0px;
+  margin-left: 0px; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -826,7 +830,8 @@ body {
   font-weight: 300; }
 
 .content-area-archive-page .all-categories {
-  list-style: none; }
+  list-style: none;
+  margin-left: 0px; }
   .content-area-archive-page .all-categories li {
     font-size: 1.5rem;
     list-style: none;

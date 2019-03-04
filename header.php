@@ -29,7 +29,7 @@
                 <!-- the site logo -->
                 <?php $logo_url = get_template_directory_uri() . '/assets/qod-logo.svg'; ?>
                 <a class="logo-link" href="<?php echo get_home_url(); ?>">
-                    <img class="frontsite-header-logo" src='<?php echo $logo_url ?>'>
+                    <img alt="site-logo" class="frontsite-header-logo" src='<?php echo $logo_url ?>'>
                 </a>
 
 

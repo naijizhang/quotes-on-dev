@@ -9,11 +9,11 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div id="entry-content" class="entry-content">
+    <div class="entry-content">
         <?php the_content(); ?>
     </div><!-- .entry-content -->
     <div class="entry-author">
-    <p id="entry-title" class="entry-title">—
+    <p class="entry-title">—
       <?php the_title(); ?>
       <?php if(get_post_meta($post->ID, '_qod_quote_source_url', true)!==''):?>
       <span class="quote-meta">, <a href="<?php echo get_post_meta($post->ID, '_qod_quote_source_url', true); ?>"><?php echo get_post_meta($post->ID, '_qod_quote_source', true); ?></a></span>

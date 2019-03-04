@@ -28,11 +28,11 @@ get_header(); ?>
         </div>
 
         <!-- //Categories -->
-        <div class="all-categories">
+        <ul class="all-categories">
 
             <?php wp_list_categories(array()); ?>
 
-        </div>
+    </ul>
         <!-- wp_tag_cloud( $args ); -->
         <!-- //Tags -->
         <!-- reference: https://stackoverflow.com/questions/39685167/list-all-the-tags-in-a-wordpress-blog-->
