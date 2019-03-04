@@ -1,23 +1,21 @@
-# Quotes on Dev Starter
+# Quotes on Dev
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+This is a WordPress theme for the Quotes on Dev project in RED Academy, forked from Underscores. This project is a good showcase of applying PHP, CSS, REST Api, and JavaScript.
 
-## Installation
+## Home page
+The home page shows a random post, and the button is for loading one a new random post on the page using JavaScript and REST Api. This page uses home.php template. The click function using 'get' method to get content from the server.
+<img src="./docs/home.png" style="width: 100%;" />
 
-### 1. Download me (don't clone me!)
+## Archive page
+The archive page shows all authors, categories and tags in this website. There is a template called page-archive.php for this page. For each category and tags, they use archive.php template.
+<img src="./docs/archives.png" style="width: 100%;" />
 
-Then add me to your `wp-content/themes` directory.
+## Submit page
+This website allow the admin user to submit new quotes on this page. If the user is not logged in, the input form doesn't show up. The submit function is based on REST Api. A nonce can be generated to make sure the security. It uses 'post' method to send message.
+<img src="./docs/submit-logged-in.png" style="width: 100%;" />
 
-### 2. Rename the `quotesondev-starter-master` directory
-
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
+## Other pages
+An about page can show some information about this website. When target url cannot be found, there is a 404 page. And it provide a search function to search this website.
+<img src="./docs/about.png" style="width: 100%;" />
+<img src="./docs/404.png" style="width: 100%;" />
+<img src="./docs/search-results.png" style="width: 100%;" />
