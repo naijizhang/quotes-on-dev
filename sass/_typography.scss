@@ -23,8 +23,12 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
 	margin-bottom: $base__space-unit;
+	font-weight: 300;
 }
-
+a{
+	text-decoration: none;
+	font-weight: 300;
+}
 dfn, cite, em, i {
 	font-style: italic;
 }
