@@ -26,30 +26,31 @@
       let content = document.getElementById('entry-content');
       let author = document.getElementById('entry-title');
       let source = ' ';
+      let quote=response[0];
 
       //has source with link.  '_qod_quote_source'  '_qod_quote_source_url'
       if (
-        response[0]._qod_quote_source_url.length !== 0 &&
-        response[0]._qod_quote_source.length !== 0
+        quote._qod_quote_source_url.length !== 0 &&
+        quote._qod_quote_source.length !== 0
       ) {
         source = `, <a class="quote-link" href=${
-          response[0]._qod_quote_source_url
-        } >${response[0]._qod_quote_source}</a>`;
-      } else if (response[0]._qod_quote_source.length !== 0) {
+          quote._qod_quote_source_url
+        } >${quote._qod_quote_source}</a>`;
+      } else if (quote._qod_quote_source.length !== 0) {
         //has source
 
-        source = `,&nbsp;${response[0]._qod_quote_source}`;
+        source = `,&nbsp;${quote._qod_quote_source}`;
       } else {
         //no source
         //keep empty
         source = '';
       }
       //fill new content
-      content.innerHTML = response[0].content.rendered;
-      author.innerHTML = '—' + response[0].title.rendered + '<span class="source-part">' +source+'</span>';
+      content.innerHTML = quote.content.rendered;
+      author.innerHTML = '—' + quote.title.rendered + '<span class="source-part">' +source+'</span>';
 
       //change url
-      const url = quotes_vars.home_url + '/' + response[0].slug;
+      const url = quotes_vars.home_url + '/' + quote.slug;
       history.pushState(null, null, url);
     });
   }
@@ -62,9 +63,9 @@
     getPost();
   });
 
-  $('.menu-item-222 a').after('<span>|</span>');
-  $('.menu-item-221 a').after('<span>|</span>');
-  $('.menu-item-219 a').before(
+  $('.menu li:nth-child(1) a').after('<span>|</span>');
+  $('.menu li:nth-child(2) a').after('<span>|</span>');
+  $('.menu li:nth-child(4) a').before(
     '<span class="more-divide-mark">|</span><span>Brought to you by</span>'
   );
 
