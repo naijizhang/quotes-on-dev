@@ -34,4 +34,5 @@ Then add the theme folder in `themes` to your `wp-content -> themes`.
 Then the theme can be applied.
 
 ### 3. Add demo content to Post
-tool->import->WordPress->select the file in quotesondev theme`/themes/quotesondev/assets/quotesondev.wordpress.2018-06-19.xml`
+tool->import->WordPress->select the file in quotesondev theme
+`/themes/quotesondev/assets/quotesondev.wordpress.2018-06-19.xml`
