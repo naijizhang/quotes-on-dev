@@ -1,7 +1,5 @@
 (function($) {
   //testing
-  console.log(quotes_vars);
-
   let lastPage = '';
   //make back/forward nav work with history api
   $(window).on('popstate', function() {
@@ -25,7 +23,6 @@
       },
       dataType: 'json'
     }).done(function(response) {
-      console.log(response[0]);
       let content = document.getElementById('entry-content');
       let author = document.getElementById('entry-title');
       let source = ' ';
@@ -53,7 +50,6 @@
 
       //change url
       const url = quotes_vars.home_url + '/' + response[0].slug;
-      console.log(url);
       history.pushState(null, null, url);
     });
   }
