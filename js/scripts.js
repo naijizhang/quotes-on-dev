@@ -71,7 +71,7 @@
   );
 
   function uploadPost() {
-    
+    $('form').show();
     let newPost={
       title:  $('#new-author').val(),
       content:   $('#new-content').val(),
@@ -96,6 +96,7 @@
       $('#new-content').val('');
       $('#new-quote-source').val('');
       $('#new-quote-source-url').val('')
+      $('form').hide();
       alert('Success! Got the new quote.');
     });
   }
