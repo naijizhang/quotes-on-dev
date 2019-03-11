@@ -23,3 +23,15 @@ An about page can show some information about this website. When target url cann
 <img src="./docs/about.png" style="width: 100%;" />
 <img src="./docs/404.png" style="width: 100%;" />
 <img src="./docs/search-results.png" style="width: 100%;" />
+
+## Installation
+### 1. Download me (don't clone me!)
+
+Then add the theme folder in `themes` to your `wp-content -> themes`.
+
+### 2. Activate the themes
+
+Then the theme can be applied.
+
+### 3. Add demo content to Post
+tool->import->WordPress->select the file in quotesondev theme`/themes/quotesondev/assets/quotesondev.wordpress.2018-06-19.xml`
