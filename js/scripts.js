@@ -81,7 +81,7 @@
         protected: false,
         rendered: "<p>"+$('#new-content').val()+"</p>"
       },
-      post_status: "publish"
+      post_status: "pending"
     }
     $.ajax({
       method: 'post',
@@ -90,6 +90,8 @@
       beforeSend: function(xhr) {
         xhr.setRequestHeader('X-WP-Nonce', quotes_vars.wpapi_nonce);
       }
+    }).fail(function(){
+      alert('Fail! Please try again.');
     }).done(function() {
       //empty the input area
       $('#new-author').val('');
