@@ -1,6 +1,6 @@
 # Quotes on Dev
 
-This is a WordPress theme for the Quotes on Dev project in RED Academy, forked from Underscores. This project is a good showcase of applying PHP, CSS, REST Api, and JavaScript.
+This is a WordPress theme for the Quotes on Dev project in RED Academy, forked from Underscores. This project is a good showcase of applying PHP, CSS, REST Api, and JavaScript. This website include the functions like get random post, show the archive and taxonomy, submit new quote post, search et al.
 
 ## Home page
 The home page shows a random post, and the button is for loading one a new random post on the page using JavaScript and REST Api. This page uses home.php template. The click function using 'get' method to get content from the server.
@@ -13,7 +13,7 @@ The archive page shows all authors, categories and tags in this website. There i
 <img src="./docs/archives.png" style="width: 100%;" />
 
 ## Submit page
-This website allow the admin user to submit new quotes on this page. If the user is not logged in, the input form doesn't show up. The submit function is based on REST Api. A nonce can be generated to make sure the security. It uses 'post' method to send message.
+This website allow the admin user to submit new quotes on this page. If the user is not logged in, the input form doesn't show up. The submit function is based on REST Api. A nonce can be generated to make sure the security. It uses 'post' method to send message. If a quote post is submited the website can show a success message to user and hide the input form. 
 
 <img src="./docs/submit-logged-in.png" style="width: 100%;" />
 
