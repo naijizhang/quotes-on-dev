@@ -1,4 +1,5 @@
 (function($) {
+  $(function() {
   //testing
   let lastPage = '';
   //make back/forward nav work with history api
@@ -106,4 +107,5 @@
     }
 
   });
+});
 })(jQuery);
